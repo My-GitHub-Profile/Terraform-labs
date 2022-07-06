@@ -30,7 +30,7 @@ variable "ak" {
 
 variable "sk" {
  type = string
- default = "BfvuWPGBOJr6OHyKHyziSfw8b+dscDjt"
+ default = "BfvuWPGBOHyziSfw8b+dscDjt"
 }
 
 
