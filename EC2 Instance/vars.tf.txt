@@ -1,0 +1,37 @@
+variable "ami" {
+ type = string
+ default = "ami-07620139298af599e"
+}
+
+variable "region" {
+ type = string
+ default = "ap-southeast-2"
+}
+
+variable "itype" {
+ type = string
+ default = "t2.micro"
+}
+
+variable "key" {
+ type =string
+ default = "kp1syd"
+}
+
+variable "sg" {
+ type =string
+ default = "devops security group"
+}
+
+variable "ak" {
+ type = string
+ default = "AKIAZSSCNYCKGWEE2S4B" 
+}
+
+variable "sk" {
+ type = string
+ default = "BfvuWPGBOJr6OHyKHyM+EBVdXjziSfw8b+dscDjt"
+}
+
+
+
