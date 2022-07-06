@@ -1,0 +1,9 @@
+resource "aws_instance" "name" {
+ ami = var.ami
+ key_name = var.key
+ instance_type = var.itype
+ security_groups = [var.sg] 
+ tags = {
+  Name = "HelloWorld"
+  } 
+}
