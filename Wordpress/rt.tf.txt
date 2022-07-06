@@ -1,0 +1,24 @@
+resource "aws_internet_gateway" "pubig" {
+ vpc_id = aws_vpc.wpvpc.id
+ tags = {
+    Name = "pubig"
+  }
+}
+
+resource "aws_default_route_table" "pubrt" {
+  default_route_table_id = aws_vpc.wpvpc.default_route_table_id
+
+  route {
+      cidr_block = "0.0.0.0/0"
+      gateway_id = aws_internet_gateway.pubig.id
+    }
+
+  tags = {
+    Name = "defrt"
+  }
+}
+
+resource "aws_route_table_association" "associate_subnet" {
+  subnet_id      = aws_subnet.pubsub.id
+  route_table_id = aws_default_route_table.pubrt.id
+}
