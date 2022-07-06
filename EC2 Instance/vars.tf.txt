@@ -25,12 +25,12 @@ variable "sg" {
 
 variable "ak" {
  type = string
- default = "AKIAZSSCNYCKGWEE2S4B" 
+ default = "AKIAZSWEE2S4B" 
 }
 
 variable "sk" {
  type = string
- default = "BfvuWPGBOJr6OHyKHyM+EBVdXjziSfw8b+dscDjt"
+ default = "BfvuWPGBOJr6OHyKHyziSfw8b+dscDjt"
 }
 
 
